@@ -9,13 +9,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <!--Header-->
   <header class="header">
-      <div class="header__wrapper">
+    <div class="header__wrapper">
+      <div class="header__shadow">
+      </div>
+      <!-- <div class="header__image">
+          <img src="/images/background.png" alt="background">
+        </div> -->
         <div class="logo">
           <h2 class="logo__title">EL TIGRE</h2>
           <h5 class="logo__subtitle">VENEZUELA COFFEE BEANS</h5>
@@ -32,9 +38,52 @@
           <a href="#contact">Contact</a>
         </div>
         <hr class="header__line">
+        <div class="discover">
+          <h1>DISCOVER</h1>
+          <i class="fas fa-arrow-circle-down"></i>
+        </div>
       </div>
   </header>
 <!--Header-->
 
+<!--Pages-->
+<div id="pages">
+  <section id="home">
+    <div class="home-wrapper container"></div>
+  </section>
+  <section id="order">
+    <div id="product-list" class="product-list container"></div>
+  </section>
+  <section id="booking">
+    <div class="booking-wrapper container"></div>
+  </section>
+</div>
+<!--Pages-->
+
+<!--Home-->
+<script id="template-home-widget" type="text/x-handlebars-template">
+  <div class="home-wrapper">
+
+</script>
+<!--Home-->
+
+<!--Products-->
+<script id="template-products-widget" type="text/x-handlebars-template">
+  <div class="products-wrapper">
+
+</script>
+<!--Products-->
+
+<!--Contact-->
+<script id="template-contact-widget" type="text/x-handlebars-template">
+  <div class="contact-wrapper">
+
+</script>
+<!--Contact-->
+
+<!--Scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+<script src="js/app.js" type="module"></script>
+<!--Scripts-->
 </body>
 </html>

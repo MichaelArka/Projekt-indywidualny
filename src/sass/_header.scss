@@ -2,13 +2,41 @@
   margin: 0 0 0 0;
 
   .header__wrapper {
-  background-image: url(../images/background.png);
-  position: relative;
-  height: 75vh;
-  background-size: cover;
+    background-image: url(../images/background.png);
+    position: relative;
+    height: 75vh;
+    background-size: cover;
+
+    /*.header__image img{
+      width: max-content;
+      position: relative;
+      background-size: cover;
+    }*/
+
+    /*.header__wrapper::after {
+        content: '';
+        width: 150px;
+        height: 200px;
+        background-color: #5777c9;
+        opacity: 0.3;
+        left: 20px;
+        top: 20px;
+        position: absolute;
+        transition: 1s ease;
+    }*/
+
+    .header__shadow {
+      content: '';
+      background-color: black;
+      height: 75vh;
+      position: absolute;
+      width: 100%;
+      opacity: 0.6;
+    }
 
     .logo {
       padding: 20px 0 0 350px;
+      position: absolute;
     
       .logo__title {
         margin: 0 0 0 0;
@@ -23,8 +51,12 @@
     .header__description {
       font-size: 40px;
       color: rgba(191,167,124,255);
-      padding: 60px 0 0 350px;
+      //padding: 200px 0 0 350px;
       font: $font-family;
+      position: absolute;
+      top: 200px;
+      left: 25%;
+      right: 10%;
 
       h1 {
         margin: 0;
@@ -34,7 +66,10 @@
     .header__description2 {
       font-size: 40px;
       color: rgba(191,167,124,255);
-      padding: 0 0 0 500px;
+      //padding: 300px 0 0 500px;
+      position: absolute;
+      top: 300px;
+      left: 35%;
 
       h1 {
         margin: 0;
@@ -58,6 +93,29 @@
       width: 20%;
       background-color: rgba(191,167,124,255);
       height: 2px;
+      bottom: 220px;
+      left: 40%;
+      position: absolute;
+    }
+
+    .main__nav a {
+      transition: 0.5s;
+    }
+
+    .main__nav a:hover {
+      color: rgba(191,167,124,255);
+    }
+
+    .discover {
+      color: #fff;
+      position: absolute;
+      text-align: center;
+      right: 920px;
+      bottom: 30px;
+
+      i {
+        font-size: 30px;
+      }
     }
   }
 }
