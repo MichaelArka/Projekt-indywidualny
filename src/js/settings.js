@@ -8,12 +8,12 @@ export const select = {
   containerOf: {
     home: '.home-wrapper',
     products: '.products-wrapper',
-    contact: '.contact-wrapper',
+    contacts: '.contact-wrapper',
     pages: '#pages',
   },
 
   nav: {
-    links: '.main__nav a'
+    links: '.main__nav a',
   },
 };
 

@@ -1,5 +1,7 @@
 import {select, classNames} from './settings.js';
 import Home from './components/Home.js';
+import Products from './components/Products.js';
+import Contact from './components/Contact.js';
 
 const app = {
   initPages: function() {
@@ -71,15 +73,26 @@ const app = {
     thisApp.home = new Home(homeContainer);
   },
 
+  initProducts(){
+    const thisApp = this;
+
+    const productsContainer = document.querySelector(select.containerOf.products);
+    thisApp.Products = new Products(productsContainer);
+  },
+
+  initContact(){
+    const thisApp = this;
+
+    const contactContainer = document.querySelector(select.containerOf.contacts);
+    thisApp.Contact = new Contact(contactContainer);
+  },
+
   init: function(){
     const thisApp = this;
-    //console.log('*** App starting ***');
-    //console.log('thisApp:', thisApp);
-    //console.log('classNames:', classNames);
-    //console.log('settings:', settings);
-    //console.log('templates:', templates);
     
     thisApp.initHome();
+    thisApp.initProducts();
+    thisApp.initContact();
     thisApp.initPages();
   },
 };
