@@ -1,5 +1,5 @@
 import {select, classNames} from './settings.js';
-import Home from './Home.js';
+import Home from './components/Home.js';
 
 const app = {
   initPages: function() {
@@ -84,6 +84,6 @@ const app = {
   },
 };
 
-app.initPages();
+app.init();
 
 export default app;

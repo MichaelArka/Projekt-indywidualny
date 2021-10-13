@@ -2,7 +2,7 @@ export const select = {
   templateOf: {
     homeWidget: '#template-home-widget',
     productsWidget: '#template-products-widget',
-    contactWidget: '#template-contact-widget',
+    contactsWidget: '#template-contact-widget',
   },
 
   containerOf: {
@@ -18,8 +18,12 @@ export const select = {
 };
 
 export const classNames = {
-  nav: '.active',
-  pages: '.active',
+  nav: {
+    active: 'active',
+  },
+  pages: {
+    active: 'active',
+  },
 };
 
 export const settings = {
@@ -32,7 +36,7 @@ export const settings = {
 export const templates = {
   homeWidget: Handlebars.compile(document.querySelector(select.templateOf.homeWidget).innerHTML),
   productsWidget: Handlebars.compile(document.querySelector(select.templateOf.productsWidget).innerHTML),
-  contactWidget: Handlebars.compile(document.querySelector(select.templateOf.contactWidget).innerHTML),
+  contactsWidget: Handlebars.compile(document.querySelector(select.templateOf.contactsWidget).innerHTML),
 };
 
 export default settings;
