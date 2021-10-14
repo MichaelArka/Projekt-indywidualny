@@ -1,0 +1,46 @@
+.about__us {
+  background-image: url(../images/about-us.jpg);
+  position: relative;
+  text-align: center;
+  height: 50vh;
+  margin: 40px 0 0 0;
+
+  .about__us__shadow {
+    content: '';
+      background-color: black;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      opacity: 0.8;
+  }
+
+  .about__us__title__div {
+    color: $main-color;
+    position: absolute;
+    left: 500px;
+    top: 3px;
+    font-size: 27px;
+  }
+
+  .about__us__line {
+    width: 35%;
+    top: 115px;
+    height: 2px;
+    background-color: $main-color;
+    position: absolute;
+    left: 35%;
+  }
+
+  .about__us__description__div {
+    text-align: left;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    padding: 0 45px 0 0;
+  }
+
+  .about__us__join {
+    position: absolute;
+    right: 5px;
+  }
+}
