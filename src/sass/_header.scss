@@ -1,29 +1,13 @@
 .header {
   margin: 0 0 0 0;
+  width: 100%;
 
   .header__wrapper {
     background-image: url(../images/background.png);
     position: relative;
     height: 75vh;
     background-size: cover;
-
-    /*.header__image img{
-      width: max-content;
-      position: relative;
-      background-size: cover;
-    }*/
-
-    /*.header__wrapper::after {
-        content: '';
-        width: 150px;
-        height: 200px;
-        background-color: #5777c9;
-        opacity: 0.3;
-        left: 20px;
-        top: 20px;
-        position: absolute;
-        transition: 1s ease;
-    }*/
+    width: 100%;
 
     .header__shadow {
       content: '';

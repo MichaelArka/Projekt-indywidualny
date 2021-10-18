@@ -4,14 +4,15 @@
   text-align: center;
   height: 50vh;
   margin: 40px 0 0 0;
+  width: auto;
 
   .about__us__shadow {
     content: '';
-      background-color: black;
-      height: 100%;
-      position: absolute;
-      width: 100%;
-      opacity: 0.8;
+    background-color: black;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    opacity: 0.8;
   }
 
   .about__us__title__div {
@@ -43,4 +44,37 @@
     position: absolute;
     right: 5px;
   }
+}
+
+@media (max-width: 768px) {
+
+  .about__us {
+    width: auto;
+    display: block;
+    height: 700px;
+
+    .about__us__title__div {
+      color: $main-color;
+      position: absolute;
+      left: 35%;
+      top: 3px;
+      font-size: 27px;
+    }
+
+    .about__us__description__div {
+      text-align: center;
+      left: 0;
+      padding: 0 0 0 140px;
+    }
+  }
+
+  // .about__us__title__div {
+  //   font-size: 45px;
+  //   color: $main-color;
+  //   padding: 20px 0 20px 0;
+  //   text-align: center;
+  //   display: inline-block;
+  //   left: 1px;
+  //   top: 3px;
+  // }
 }
