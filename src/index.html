@@ -91,9 +91,7 @@
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-6">
             <div class="gallery-div">
-              <div>
-                <img src="../images/coffee-1.png" alt="la lagartija">
-              </div>
+                <img class="home__image" src="../images/coffee-1.png" alt="la lagartija">
             </div>
           </div>
         </div>
@@ -101,9 +99,7 @@
         <div class="row">
           <div class="col-12 col-sm-12 col-md-12 col-lg-6">
             <div class="gallery-div">
-              <div>
-                <img src="../images/coffee-2.png" alt="el tigre">
-              </div>
+                <img class="home__image" src="../images/coffee-2.png" alt="el tigre">
             </div>
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-6">
@@ -146,7 +142,7 @@
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-6">
             <div class="gallery-div">
-              <img src="../images/coffee-3.png" alt="">
+                <img class="home__image" src="../images/coffee-3.png" alt="">
             </div>
           </div>
         </div>
@@ -183,19 +179,21 @@
 <!--Products-->
 <script id="template-products-widget" type="text/x-handlebars-template">
   <div class="products-wrapper">
-    <section class="gallery">
-      <div class="container-lg">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
-          <div class="col-12">
-            <h1 class="home__title">PRODUCTS</h1>
-            <hr class="home__line">
-          </div>
-          <div class="col-6">
+    <div class="container">
+      <section class="gallery">
+
+        <div class="products">
+          <h1 class="home__title">PRODUCTS</h1>
+          <hr class="home__line">
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
             <div class="gallery-div">
               <h1 class="gallery__title">01.LA LAGARTIJA</h1>
               <hr class="gallery__line">
               <p class="gallery__description">Mysterious and treacherous...
-                  The best choice for<br>the start of your journey! It will provide to you a rich<br>delicious flavor.
+                  The best choice for<br>the start of your journey! It will provide to you a rich delicious flavor.
               </p>
               <div class="home__rating__1">
                 <h3>ROASTING:</h3>
@@ -210,34 +208,40 @@
               </div>
             </div>
           </div>
-          <div class="col-5">
-            <div>
-              <img src="../images/coffee-1.png" alt="la lagartija">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="gallery-div">
+                <img class="home__image" src="../images/coffee-1.png" alt="la lagartija">
             </div>
           </div>
-          <div class="col-6">
-            <div>
-              <img src="../images/coffee-2.png" alt="el tigre">
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="gallery-div">
+                <img class="home__image" src="../images/coffee-2.png" alt="el tigre">
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
             <div class="gallery-div">
               <h1 class="gallery__title">02. EL TIGRE</h1>
               <hr class="gallery__line">
               <p class="gallery__description__2">Really dark coffee, only for the real gourmets. It has
                 bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.
               </p>
-              <div class="home__rating__1">
+              <div class="home__rating__11">
                 <h3>ROASTING:</h3>
                 <h3>INTENSITY:</h3>
               </div>
-              <div class="home__rating__2">
+              <div class="home__rating__22">
                 <p>8/10</p>
                 <p>9/10</p>
               </div>
             </div>
           </div>
-          <div class="col-6">
+        </div>
+
+        <div class="row">
+          <div class="d-flex flex-column col-12 col-sm-12 col-md-12 col-lg-6 ">
             <div class="gallery-div">
                 <h1 class="gallery__title">03. LA CUCATACHA</h1>
                 <hr class="gallery__line">
@@ -255,23 +259,23 @@
               </div>
             </div>
           </div>
-
-          <div class="col-5">
-            <div class="w-100 card mb-3 d-flex justify-content d-flex align-items-center">
-              <img src="../images/coffee-3.png" alt="">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="gallery-div">
+                <img class="home__image" src="../images/coffee-3.png" alt="">
             </div>
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!--footer-->
-    <div class="footer">
+    <div class="product__footer">
       <p>© 2021 EL TIGRE inc.</p>
     </div>
     <!--footer-->
 
+      </div>
+    </section>
   </div>
 </script>
 <!--Products-->
@@ -279,7 +283,10 @@
 <!--Contact-->
 <script id="template-contact-widget" type="text/x-handlebars-template">
   <div class="contact-wrapper">
-
+    <div class="container">
+        <h1 class="contact__title">CONTACT US</h1>
+        <hr class="contact__line">
+    </div>
   </div>
 </script>
 <!--Contact-->

@@ -25,9 +25,10 @@ img {
 .home__popular {
   position: absolute;
   right: 5px;
-
+  
   img {
     box-shadow: none;
+    margin: 20px 0 0 0;
   }
 }
 
@@ -38,7 +39,8 @@ img {
 .gallery div {
   color: black;
   position: relative;
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
+  height: 400px;
   
 
   .gallery__title{
@@ -91,33 +93,33 @@ img {
       margin: 0 0 0 0;
     }
   }
-    .home__rating__11 {
-      position: absolute;
-      top: 170px;
-      left: 5px;
-      font-size: 17px;
+
+  .home__rating__11 {
+    position: absolute;
+    top: 170px;
+    left: 5px;
+    font-size: 17px;
   
-      h3 {
-        margin: 0 0 0 0;
-      }
+    h3 {
+      margin: 0 0 0 0;
     }
+  }
     
-    .home__rating__22 {
-      position: absolute;
-      top: 168px;
-      left: 130px;
-      color: $main-color;
-      font-size: 20px;
+  .home__rating__22 {
+    position: absolute;
+    top: 168px;
+    left: 130px;
+    color: $main-color;
+    font-size: 20px;
   
-      p {
-        margin: 0 0 0 0;
-      }
+    p {
+      margin: 0 0 0 0;
     }
+  }
 
 }
 
 @media (max-width: 768px) {
-
   .gallery-div {
     display: inline-block;
     height: 340px;
@@ -133,7 +135,7 @@ img {
     }
 
     .gallery__line {
-       display: none;
+      display: none;
     }
 
     .gallery__description {
@@ -152,7 +154,7 @@ img {
   .gallery div {
     display: inline-block;
       
-      .gallery__description__2 {
+    .gallery__description__2 {
       text-align: left;
       position: absolute;
       width: 100%;

@@ -2,6 +2,7 @@ import {select, classNames} from './settings.js';
 import Home from './components/Home.js';
 import Products from './components/Products.js';
 import Contact from './components/Contact.js';
+import settings from './settings.js';
 
 const app = {
   initPages: function() {
@@ -87,6 +88,34 @@ const app = {
     thisApp.Contact = new Contact(contactContainer);
   },
 
+  // initMenu: function(){
+  //   const thisApp = this;
+  //   //console.log('thisApp.data', thisApp.data);
+
+  //   for(let productData in thisApp.data.products){
+  //     new Product(thisApp.data.products[productData].id,thisApp.data.products[productData]);
+  //   }
+  //   //const testProduct = new Product();
+  //   //console.log('testProduct', testProduct);
+  // },
+
+  initData: function(){
+    const thisApp = this;
+
+    thisApp.data = {};
+    const url = settings.db.url + '/' + settings.db.products;
+
+    fetch(url)
+      .then(function(rawResponse){
+        return rawResponse.json();
+      })
+      .then(function(parsedResponse){
+
+        thisApp.data.products = parsedResponse;
+        // thisApp.initMenu();
+      });
+  },
+
   init: function(){
     const thisApp = this;
     
@@ -94,6 +123,7 @@ const app = {
     thisApp.initProducts();
     thisApp.initContact();
     thisApp.initPages();
+    thisApp.initData();
   },
 };
 
