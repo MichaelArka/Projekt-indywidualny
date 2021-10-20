@@ -3,8 +3,9 @@
   position: relative;
   text-align: center;
   height: 50vh;
-  margin: 100px 0 0 0;
-  width: auto;
+  //margin: 100px 0 0 0;
+  width: 110vh;
+  margin: auto;
 
   .about__us__shadow {
     content: '';
@@ -18,7 +19,7 @@
   .about__us__title__div {
     color: $main-color;
     position: absolute;
-    left: 500px;
+    left: 450px;
     top: 3px;
     font-size: 27px;
   }
@@ -46,34 +47,46 @@
   }
 }
 
+/* media */
+
+@media (max-width: 992px) {
+  .about__us {
+    width: auto;
+    display: block;
+    height: 700px;
+    text-align: center;
+    align-content: center;
+  
+    .about__us__title__div {
+      color: $main-color;
+      left: 200px;
+    }
+
+    .about__us__description__div {
+      text-align: center;
+      left: 120px;
+      padding: 0;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .about__us {
     width: auto;
     display: block;
     height: 700px;
-
+    text-align: center;
+    align-content: center;
+  
     .about__us__title__div {
       color: $main-color;
-      position: absolute;
-      left: 35%;
-      top: 3px;
-      font-size: 27px;
+      left: 200px;
     }
 
     .about__us__description__div {
       text-align: center;
-      left: 0;
-      padding: 0 0 0 140px;
+      left: 120px;
+      padding: 0;
     }
   }
-
-  // .about__us__title__div {
-  //   font-size: 45px;
-  //   color: $main-color;
-  //   padding: 20px 0 20px 0;
-  //   text-align: center;
-  //   display: inline-block;
-  //   left: 1px;
-  //   top: 3px;
-  // }
 }
