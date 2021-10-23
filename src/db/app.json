@@ -1,16 +1,29 @@
 {
   "products":[
     {
-      "id":"cake",
+      "id":"coffee__1",
       "class":"small",
-      "name":"Zio Stefano's Doughnut",
+      "name":"LA LAGARTIJA",
       "price":9,
-      "description":"Treat yourself with this soft, freshly baked cookie. The recipe has been handed down from generation to generation in our family and it has won us several first place prizes in local competitions.",
-      "images":[
-          "<img class=\"active\" src=\"images/doughnut.svg\">"
-      ]
+      "description":"Mysterious and treacherous... The best choice for the start of your journey! It will provide to you a rich delicious flavor."
+    },
+
+    {
+      "id":"coffee__2",
+      "class":"small",
+      "name":"EL TIGRE",
+      "price":9,
+      "description":"Really dark coffee, only for the real gourmets. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel."
+    },
+
+    {
+      "id":"coffee__3",
+      "class":"small",
+      "name":"LA CUCATACHA",
+      "price":9,
+      "description":"Sweet and intense with a big amount of different flavors. Caramel, grapes, strawberry, you name it! It's great choice for warm summer days."
     }
   ],
+
   "contacts":[]
-    
 }
