@@ -88,17 +88,6 @@ const app = {
     thisApp.Contact = new Contact(contactContainer);
   },
 
-  // initMenu: function(){
-  //   const thisApp = this;
-  //   //console.log('thisApp.data', thisApp.data);
-
-  //   for(let productData in thisApp.data.products){
-  //     new Product(thisApp.data.products[productData].id,thisApp.data.products[productData]);
-  //   }
-  //   //const testProduct = new Product();
-  //   //console.log('testProduct', testProduct);
-  // },
-
   initData: function(){
     const thisApp = this;
 
@@ -112,7 +101,6 @@ const app = {
       .then(function(parsedResponse){
 
         thisApp.data.products = parsedResponse;
-        // thisApp.initMenu();
       });
   },
 
