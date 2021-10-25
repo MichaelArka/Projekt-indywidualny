@@ -137,6 +137,16 @@
 @media (max-width: 760px) {
   .header {
     .header__wrapper {
+
+      .navbar {
+
+        .main__nav {
+          
+          a {
+            margin: 0 10px 0 0;
+          }
+        }
+      }
       .header__description {
         .header__description__1 {
           font-size: 30px;
