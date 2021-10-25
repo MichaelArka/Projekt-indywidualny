@@ -49,6 +49,7 @@
       font-family: $second-fond;
       letter-spacing: 1px;
       width: 100%;
+      margin-left: 20%;
     }
   
     .about__us__join {
@@ -64,3 +65,14 @@
     }
   }
 }
+
+@media (max-width: 1050px) { 
+  .about__us {
+    .about__us__label {
+      .about__us__description__div {
+        margin-left: 5%;
+      }
+    }
+  }
+} 
+ 

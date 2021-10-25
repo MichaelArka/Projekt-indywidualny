@@ -23,16 +23,13 @@
 .header__wrapper {
   position: absolute;
   top: 5%;
-  left: 10%;
-  width: 90%;
+  width: 100%;
   text-align: center;
 
   .navbar {
-    width: 90%;
-
     .logo {
       margin: 10px 0 0 0;
-      text-align: left;
+      text-align: center;
     
       .logo__title {
         font: $main-font;
@@ -46,15 +43,14 @@
 
     .main__nav {
       margin: 15px 0 0 0;
-      text-align: right;
+      text-align: center;
   
       a {
         font-size: 20px;
-        margin: 0 25px 0 0;
+        margin: 0 0 0 25px;
         color: #fff;
         text-decoration: none;
       }
-
     }
 
     .main__nav a {
@@ -62,27 +58,31 @@
     }
   
     .main__nav a:hover {
-      color: rgba(191,167,124,255);
+      color: $main-color;
     }
   }
 
   .header__description {
-    margin: 100px 0 0 0px;
+    margin: 50px 0 0 0;
 
     .header__description__1 {
       font-size: 40px;
-      color: rgba(191,167,124,255);
-      width: 50%;
-      text-align: center;
+      color: $main-color;
+      text-align: left;
+      // padding-left: 10%;
 
       h1 {
         margin: 0;
+        letter-spacing: 13px;
       }
     }
 
     .header__description__2 {
       font-size: 40px;
-      color: rgba(191,167,124,255);
+      color: $main-color;
+      text-align: right;
+      letter-spacing: 13px;
+      // padding-right: 10%;
 
       h1 {
         margin: 0;
@@ -96,16 +96,18 @@
   position: absolute;
   bottom: 5%;
   width: 100%;
+  height: 250px;
 
   .header__line {
     width: 20%;
-    background-color: rgba(191,167,124,255);
+    background-color: $main-color;
     height: 2px;
   }
 
   .discover {
     color: #fff;
     text-align: center;
+    margin: 125px 0 0 0;
 
     h1 {
       font-weight: 500;
@@ -118,7 +120,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .header {
     .header__wrapper {
       .header__description {
@@ -134,19 +136,9 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1165px) {
   .header {
     .header__wrapper {
-
-      .navbar {
-
-        .main__nav {
-          
-          a {
-            margin: 0 10px 0 0;
-          }
-        }
-      }
       .header__description {
         .header__description__1 {
           font-size: 30px;
@@ -155,6 +147,44 @@
         .header__description__2 {
           font-size: 30px;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 965px) {
+  .header {
+    .header__wrapper {
+      .header__description {
+        .header__description__1 {
+          font-size: 25px;
+        }
+    
+        .header__description__2 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 831px) {
+  .header {
+    .header__wrapper {
+      .header__description__1 {
+        font-size: 20px;
+      }
+  
+      .header__description__2 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .navbar {
+    .main__nav {
+      a {
+        margin: 0 10px 0 0;
       }
     }
   }
