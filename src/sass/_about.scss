@@ -1,6 +1,6 @@
 .about__us {
   position: relative;
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   margin: auto;
   display: flex;
@@ -30,15 +30,15 @@
   .about__us__label {
     position: absolute;
     top: 10%;
-    width: 30%;
+    width: 50%;
 
     .about__us__title__div {
       color: $main-color;
-      font-size: 27px;
+      font-size: 30px;
     }
 
     .about__us__line {
-      width: 100%;
+      width: 60%;
       height: 2px;
       background-color: $main-color;
       position: relative;
@@ -49,7 +49,6 @@
       font-family: $second-fond;
       letter-spacing: 1px;
       width: 100%;
-      margin-left: 20%;
     }
   
     .about__us__join {
@@ -58,19 +57,26 @@
   }
 }
 
-@media (max-width: 1350px) {
+@media (min-width: 900px) {
   .about__us {
     .about__us__label {
-      width: 45%;
+      .about__us__description__div {
+        margin: 0 0 0 50px;
+      }
     }
   }
 }
 
-@media (max-width: 1050px) { 
+@media (min-width: 1050px) { 
   .about__us {
     .about__us__label {
       .about__us__description__div {
-        margin-left: 5%;
+        margin: 0 0 0 100px;
+      }
+
+      .about__us__join {
+        text-align: right;
+        margin: 0 200px 0 0;
       }
     }
   }

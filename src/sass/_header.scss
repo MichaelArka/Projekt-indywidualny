@@ -69,7 +69,6 @@
       font-size: 40px;
       color: $main-color;
       text-align: left;
-      // padding-left: 10%;
 
       h1 {
         margin: 0;
@@ -82,12 +81,22 @@
       color: $main-color;
       text-align: right;
       letter-spacing: 13px;
-      // padding-right: 10%;
 
       h1 {
         margin: 0;
       }
     }
+  }
+
+  .header__description::after {
+    position: absolute;
+    content: '';
+    bottom: -24px;
+    left: 50%;
+    width: 20%;
+    height: 5px;
+    transform: translateX(-50%);
+    background: $main-color;
   }
 
 }
